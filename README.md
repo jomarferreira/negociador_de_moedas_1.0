@@ -1,36 +1,32 @@
-# Negociador de Moedas 1.0
-Web Scrapping on the IBAN website and capturing a list of countries and their reference currencies.
+# 💱 Currency Consultant (Negociador de Moedas)
 
-## Source Code
-You can also download [Negociador de Moedas 1.0](https://github.com/joeywheelersam/negociador_de_moedas_1.0) directly from its [Git repository](https://github.com/joeywheelersam/Negociador-de-Moedas-1.0.git):
+Application developed in Python for consulting international currencies, using web scraping to collect real data from external sources.
 
-```
+## 🚀 Features
+
+- Web scraping of currency data from IBAN website  
+- Data processing and organization using lists and dictionaries  
+- Interactive terminal interface for user input  
+- Input validation and error handling  
+
+## 🛠️ Technologies Used
+
+- Python 3  
+- Requests  
+- BeautifulSoup  
+
+## 📊 How It Works
+
+1. The application sends a request to the IBAN website  
+2. Extracts currency data using web scraping  
+3. Organizes the data into structured format  
+4. Displays a list of countries for the user  
+5. User selects an option and receives the currency code  
+
+## ▶️ How to Run
+
+```bash
 git clone https://github.com/joeywheelersam/negociador_de_moedas_1.0.git
-```
-
-## Dependencies
-[Negociador de Moedas 1.0](https://github.com/joeywheelersam/negociador_de_moedas_1.0) works out of the box with [Python 3.10](https://www.python.org/downloads/release/python-3100/) on any platform and requires the following packages:
-- [Requests 2.28.1+](https://pypi.org/project/requests/)
-- [Beautiful Soup 4.11.1+](https://pypi.org/project/beautifulsoup4/)
-
-## Installation
-How to install dependencies:
-```
-pip install requests
-```
-```
-pip install beautifulsoup4
-```
-
-## Usage
-How to run the program:
-```
+cd negociador_de_moedas_1.0
+pip install requests beautifulsoup4
 python main.py
-```
-
-## License
-This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
-
-This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
-
-[Negociador de Moedas 1.0](https://github.com/joeywheelersam/negociador_de_moedas_1.0) is free software, keeping the picture can USE AND ABUSE 
