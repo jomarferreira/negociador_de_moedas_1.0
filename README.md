@@ -2,6 +2,13 @@
 
 Application developed in Python for consulting international currencies, using web scraping to collect real data from external sources.
 
+
+## 🇧🇷 Versão em Português
+
+Aplicação desenvolvida em Python para consulta de moedas internacionais, utilizando web scraping para coleta de dados do site IBAN.
+
+...
+
 ## 🚀 Features
 
 - Web scraping of currency data from IBAN website  
