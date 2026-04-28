@@ -1,6 +1,14 @@
 import requests, os
 from bs4 import BeautifulSoup
 
+# Menu do programa
+def menu ():
+    print ("Bem-vindo ao Negociador de Moedas 1.0")
+    print (update + " da " + url)
+    print ("Escolha pelo número da lista o país que deseja consultar a moeda.")
+    input ("Tecle enter para iniciar o programa!")
+    os.system('cls' if os.name == 'nt' else 'clear')
+
 # Função que formata o texto da URL
 def formatacao (texto):
     caracteres = "[<td>]/ " 
@@ -38,27 +46,36 @@ del tabela[0] # Deletei o primeiro item da lista porque o valor chegou vazio.
 # Criando o database 
 database(tabela)
 
-# Menu informando o nome do aplicativo
-print ("Bem-vindo ao Negociador de Moedas 1.0")
-print (update + " da " + url)
-print ("Escolha pelo número da lista o país que deseja consultar a moeda.")
-input ("Tecle enter para iniciar o programa!")
-os.system('cls' if os.name == 'nt' else 'clear')
-
-# Lista todas as moedas cadastradas
-for numero, lista in enumerate(moedas):
-        print (f"#{numero} - {lista['cidade']}")
-
-# Validação da solicitação do usuário
+menu()
 while True:
+    # Lista todas as moedas cadastradas
+    for numero, lista in enumerate(moedas):
+        print (f"#{numero} - {lista['cidade']}")
     try:
         resposta = int(input ("#: "))
         if (resposta <= len(moedas)):
+            os.system('cls' if os.name == 'nt' else 'clear')
             print ("Você escolheu o "+ moedas[resposta].get("cidade"))
             print ("O código da moeda é "+ moedas[resposta].get("código"))
-            break
+            while True:
+                resposta = input ("Deseja escolher outra moeda? s/n: ").lower()
+                if resposta == "s":
+                    os.system('cls' if os.name == 'nt' else 'clear')
+                    break
+                elif resposta == "n":
+                    os.system('cls' if os.name == 'nt' else 'clear')
+                    print ("Programa encerrado.")
+                    input("Pressione ENTER para continuar...")
+                    exit()
+                else:
+                    os.system('cls' if os.name == 'nt' else 'clear')
+                    print("Opção inválida.")
+                    input("Pressione ENTER para continuar...")
+                    os.system('cls' if os.name == 'nt' else 'clear')
         else:
-            print ("Não existe, escolha uma opção da lista!")
+            os.system('cls' if os.name == 'nt' else 'clear')
+            print("Opção inválida.")
+            input("Pressione ENTER para continuar...")
             continue
     except ValueError:
-        print("Isso não é um número")
+        print("Opção inválida.")
