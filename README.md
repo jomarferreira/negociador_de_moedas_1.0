@@ -1,30 +1,39 @@
-# 💱 Currency Consultant (Negociador de Moedas)
-Application developed in Python for consulting international currencies, using web scraping to collect real data from external sources.
+# 💱 Currency Data Scraper
 
-## 🇧🇷 Versão em Português
-Aplicação desenvolvida em Python para consulta de moedas internacionais, utilizando web scraping para coleta de dados do site IBAN.
+## 🇧🇷 Descrição
+Aplicação desenvolvida em Python para coleta e processamento de dados de moedas internacionais utilizando técnicas de web scraping.
 
-## 🚀 Features
-- Web scraping of currency data from IBAN website  
-- Data processing and organization using lists and dictionaries  
-- Interactive terminal interface for user input  
-- Input validation and error handling  
+O **Currency Data Scraper** simula um processo de extração de dados financeiros, permitindo consultar informações de moedas a partir de fontes externas e organizá-las para uso em aplicações.
 
-## 🛠️ Technologies Used
-- Python 3  
-- Requests  
-- BeautifulSoup  
+---
 
-## 📊 How It Works
-1. The application sends a request to the IBAN website  
-2. Extracts currency data using web scraping  
-3. Organizes the data into structured format  
-4. Displays a list of countries for the user  
-5. User selects an option and receives the currency code  
+## 🇺🇸 Description
+A Python application designed to collect and process international currency data using web scraping techniques.
 
-## ▶️ How to Run
+**Currency Data Scraper** simulates a financial data extraction process, allowing currency information to be retrieved from external sources and structured for application use.
+
+---
+
+## 🚀 Funcionalidades | Features
+- Coleta de dados de moedas via HTTP requests
+- Parsing de HTML com BeautifulSoup
+- Organização de dados em listas e dicionários
+- Interface interativa em terminal (CLI)
+- Validação de entrada do usuário
+- Tratamento de erros
+
+---
+
+## 🧠 Tecnologias utilizadas | Tech Stack
+- Python
+- Requests
+- BeautifulSoup
+
+---
+
+## 📦 Como executar | How to run
 ```bash
-git clone https://github.com/joeywheelersam/negociador_de_moedas_1.0.git
-cd negociador_de_moedas_1.0
-pip install requests beautifulsoup4
+git clone https://github.com/jomarferreira/currency-data-scraper.git
+cd currency-data-scraper
+pip install -r requirements.txt
 python main.py
